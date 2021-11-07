@@ -70,7 +70,7 @@ describe('Code Challenge', () => {
       cy.get('.available-card__details')
       .should('be.visible')
     }
-   d
+   
    //scroll to contact us and click button
    cy.scrollTo('bottom')
    .contains('تماس با ما')
