@@ -49,11 +49,12 @@ describe('Code Challenge', () => {
    //changing URL 
    cy.url()
    .should('contain', '/flights')
-   cy.wait(1000)
+   cy.wait(2000)
    cy.waitUntil(() => 
-        cy.get('.min-w-0')
+        cy.get('.min-w-0',{timeout:10000})
         .should('be.visible')
         .and('not.have.class','.loading-banner-modal'));
+
    //check search resualt
    cy.get("body",).then($body => {
     if ($body.find(".available-card__details").length > 0) { 
@@ -78,11 +79,9 @@ describe('Code Challenge', () => {
 
    cy.wait(500)
    cy.waitUntil(() => 
-        cy.get('.staticpage-header__segment h2')
+        cy.get('.staticpage-header__segment h2',{timeout:10000})
         .should('have.text','تماس با ما'));
-   //cy.get('.staticpage-header__segment h2')
-   //.find('h2')
-   //.should('have.text','تماس با ما')
+
    });
   })
 })
