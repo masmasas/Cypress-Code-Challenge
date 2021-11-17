@@ -64,7 +64,7 @@ After installing npm you need to create package json before installing cypress. 
 
 ## Contact
 
-Masoud Askari - masmasas95@gmail.com
+masmasas95@gmail.com
 
 Project Link: [https://github.com/masmasas/cypress-code-challenge](https://github.com/masmasas/cypress-code-challenge)
 
